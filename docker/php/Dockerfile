@@ -40,6 +40,8 @@ RUN composer config -g repos.packagist composer https://packagist.jp \
     && composer global require hirak/prestissimo \
     && composer global require laravel/installer
 
+ENV PATH $PATH:/home/appuser/.composer/vendor/bin
+
 USER root
 
 RUN mkdir -p /var/sessions \

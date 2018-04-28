@@ -5,6 +5,10 @@ services:
     build: ./docker/php
     volumes:
       - ./:/var/www/html:cached
+  node:
+    build: ./docker/node
+    volumes: 
+      - ./:/home/node/volume:cached
   nginx:
     image: nginx
     ports:

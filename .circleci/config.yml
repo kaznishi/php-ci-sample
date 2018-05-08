@@ -45,3 +45,5 @@ jobs:
         
       # run tests!
       - run: ./vendor/phpunit/phpunit/phpunit
+
+      - run: sudo apt-get update && sudo apt-get install -y awscli
